@@ -1,0 +1,51 @@
+public abstract class RBIBank  {
+	public void openAccountProcess() {
+		System.out.println("RBI opened account");
+		
+	}
+	abstract void CloseAccountProcess();
+	
+
+}
+public  class ABCbank extends RBIBank{
+
+		
+		@Override
+		void CloseAccountProcess() {
+			// TODO Auto-generated method stub
+			System.out.println("ABCbank closed the account");
+			
+		}
+
+			
+	}
+
+public class XYZbank extends RBIBank{
+
+		
+		@Override
+		void CloseAccountProcess() {
+			// TODO Auto-generated method stub
+			System.out.println("XYZ bank closed the account");
+			
+		}
+		
+		
+		
+		
+	}
+
+
+	public class Bankmanager{
+		
+		public static void main(String args[])
+		{
+			ABCbank obj=new ABCbank();
+			obj.openAccountProcess();
+			obj.CloseAccountProcess();
+			XYZbank obj1=new XYZbank();
+			obj1.openAccountProcess();
+			obj1.CloseAccountProcess();
+		}
+	}
+

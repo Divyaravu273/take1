@@ -1,0 +1,25 @@
+public class BasicCalculators
+{
+int num1,num2;
+public void and()
+{
+int result=num1&num2;
+System.out.println("The bitwise and of two  numbers"+ num1+" and"+ num2+" is"+result);
+}
+
+public void or()
+{
+int result=num1 |num2;
+System.out.println("The bitwise OR of two  numbers"+ num1+" and"+ num2+" is"+result);
+}
+public void xor()
+{
+int result=num1^num2;
+System.out.println("The bitwise XOR of two  numbers"+ num1+" and"+ num2+" is"+result);
+}
+public void not()
+{
+int result=!num1;
+System.out.println("The bitwise NOT"+ num1+" is"+result);
+}
+}
